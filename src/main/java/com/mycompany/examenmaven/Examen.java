@@ -25,6 +25,10 @@ public class Examen {
             //conectarse al documento de la pagina web
             Document doc = Jsoup.connect("https://weather.com/es-ES/tiempo/hoy/l/SPXX0084:1:SP").get();
         
+            //titulo del documento
+            String titulo = doc.title();
+            System.out.println(titulo);
+            // Resultado: Vigo, España Pronóstico del tiempo y condiciones meteorológicas - The Weather Channel | Weather.com
         
         
         
