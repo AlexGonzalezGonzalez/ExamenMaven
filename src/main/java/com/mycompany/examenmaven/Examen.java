@@ -36,6 +36,11 @@ public class Examen {
             System.out.println(estadoCielo.eachText());
             //Muestra [Parcialmente nublado]
 
+            //Seleccionamos el elemento de la clase today_nowcard-temp y cogemos su contenido
+            Elements temperatura = doc.select("div.today_nowcard-temp");
+            System.out.println(temperatura.eachText());
+            //Resultado: 11º
+
         } catch (IOException ex) {
             Logger.getLogger(Examen.class.getName()).log(Level.SEVERE, null, ex);
         }
